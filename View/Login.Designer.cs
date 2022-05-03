@@ -32,11 +32,11 @@
             this.hopeForm1 = new ReaLTaiizor.Forms.HopeForm();
             this.hopePictureBox1 = new ReaLTaiizor.Controls.HopePictureBox();
             this.hopeGroupBox1 = new ReaLTaiizor.Controls.HopeGroupBox();
-            this.hopeRoundButton1 = new ReaLTaiizor.Controls.HopeRoundButton();
-            this.dungeonHeaderLabel1 = new ReaLTaiizor.Controls.DungeonHeaderLabel();
+            this.PasswordBox = new ReaLTaiizor.Controls.HopeTextBox();
+            this.UsernameBox = new ReaLTaiizor.Controls.HopeTextBox();
             this.dungeonHeaderLabel2 = new ReaLTaiizor.Controls.DungeonHeaderLabel();
-            this.hopeTextBox1 = new ReaLTaiizor.Controls.HopeTextBox();
-            this.hopeTextBox2 = new ReaLTaiizor.Controls.HopeTextBox();
+            this.dungeonHeaderLabel1 = new ReaLTaiizor.Controls.DungeonHeaderLabel();
+            this.LoginButton = new ReaLTaiizor.Controls.HopeRoundButton();
             ((System.ComponentModel.ISupportInitialize)(this.hopePictureBox1)).BeginInit();
             this.hopeGroupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -75,11 +75,11 @@
             // hopeGroupBox1
             // 
             this.hopeGroupBox1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(223)))), ((int)(((byte)(230)))));
-            this.hopeGroupBox1.Controls.Add(this.hopeTextBox2);
-            this.hopeGroupBox1.Controls.Add(this.hopeTextBox1);
+            this.hopeGroupBox1.Controls.Add(this.PasswordBox);
+            this.hopeGroupBox1.Controls.Add(this.UsernameBox);
             this.hopeGroupBox1.Controls.Add(this.dungeonHeaderLabel2);
             this.hopeGroupBox1.Controls.Add(this.dungeonHeaderLabel1);
-            this.hopeGroupBox1.Controls.Add(this.hopeRoundButton1);
+            this.hopeGroupBox1.Controls.Add(this.LoginButton);
             this.hopeGroupBox1.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.hopeGroupBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(49)))), ((int)(((byte)(51)))));
             this.hopeGroupBox1.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(223)))), ((int)(((byte)(230)))));
@@ -92,37 +92,51 @@
             this.hopeGroupBox1.Text = "hopeGroupBox1";
             this.hopeGroupBox1.ThemeColor = System.Drawing.Color.WhiteSmoke;
             // 
-            // hopeRoundButton1
+            // PasswordBox
             // 
-            this.hopeRoundButton1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(223)))), ((int)(((byte)(230)))));
-            this.hopeRoundButton1.ButtonType = ReaLTaiizor.Util.HopeButtonType.Primary;
-            this.hopeRoundButton1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.hopeRoundButton1.DangerColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(108)))), ((int)(((byte)(108)))));
-            this.hopeRoundButton1.DefaultColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.hopeRoundButton1.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.hopeRoundButton1.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(49)))), ((int)(((byte)(51)))));
-            this.hopeRoundButton1.InfoColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(147)))), ((int)(((byte)(153)))));
-            this.hopeRoundButton1.Location = new System.Drawing.Point(72, 245);
-            this.hopeRoundButton1.Name = "hopeRoundButton1";
-            this.hopeRoundButton1.PrimaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(158)))), ((int)(((byte)(255)))));
-            this.hopeRoundButton1.Size = new System.Drawing.Size(261, 41);
-            this.hopeRoundButton1.SuccessColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(194)))), ((int)(((byte)(58)))));
-            this.hopeRoundButton1.TabIndex = 0;
-            this.hopeRoundButton1.Text = "Đăng nhập";
-            this.hopeRoundButton1.TextColor = System.Drawing.Color.White;
-            this.hopeRoundButton1.WarningColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(162)))), ((int)(((byte)(60)))));
+            this.PasswordBox.BackColor = System.Drawing.Color.White;
+            this.PasswordBox.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(55)))), ((int)(((byte)(66)))));
+            this.PasswordBox.BorderColorA = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(158)))), ((int)(((byte)(255)))));
+            this.PasswordBox.BorderColorB = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(223)))), ((int)(((byte)(230)))));
+            this.PasswordBox.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.PasswordBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(49)))), ((int)(((byte)(51)))));
+            this.PasswordBox.Hint = "";
+            this.PasswordBox.Location = new System.Drawing.Point(13, 163);
+            this.PasswordBox.MaxLength = 32767;
+            this.PasswordBox.Multiline = false;
+            this.PasswordBox.Name = "PasswordBox";
+            this.PasswordBox.PasswordChar = '\0';
+            this.PasswordBox.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.PasswordBox.SelectedText = "";
+            this.PasswordBox.SelectionLength = 0;
+            this.PasswordBox.SelectionStart = 0;
+            this.PasswordBox.Size = new System.Drawing.Size(383, 43);
+            this.PasswordBox.TabIndex = 4;
+            this.PasswordBox.TabStop = false;
+            this.PasswordBox.UseSystemPasswordChar = true;
             // 
-            // dungeonHeaderLabel1
+            // UsernameBox
             // 
-            this.dungeonHeaderLabel1.AutoSize = true;
-            this.dungeonHeaderLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.dungeonHeaderLabel1.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
-            this.dungeonHeaderLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(77)))));
-            this.dungeonHeaderLabel1.Location = new System.Drawing.Point(6, 15);
-            this.dungeonHeaderLabel1.Name = "dungeonHeaderLabel1";
-            this.dungeonHeaderLabel1.Size = new System.Drawing.Size(131, 25);
-            this.dungeonHeaderLabel1.TabIndex = 1;
-            this.dungeonHeaderLabel1.Text = "Tên tài khoản";
+            this.UsernameBox.BackColor = System.Drawing.Color.White;
+            this.UsernameBox.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(55)))), ((int)(((byte)(66)))));
+            this.UsernameBox.BorderColorA = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(158)))), ((int)(((byte)(255)))));
+            this.UsernameBox.BorderColorB = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(223)))), ((int)(((byte)(230)))));
+            this.UsernameBox.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.UsernameBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(49)))), ((int)(((byte)(51)))));
+            this.UsernameBox.Hint = "";
+            this.UsernameBox.Location = new System.Drawing.Point(13, 54);
+            this.UsernameBox.MaxLength = 32767;
+            this.UsernameBox.Multiline = false;
+            this.UsernameBox.Name = "UsernameBox";
+            this.UsernameBox.PasswordChar = '\0';
+            this.UsernameBox.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.UsernameBox.SelectedText = "";
+            this.UsernameBox.SelectionLength = 0;
+            this.UsernameBox.SelectionStart = 0;
+            this.UsernameBox.Size = new System.Drawing.Size(383, 43);
+            this.UsernameBox.TabIndex = 3;
+            this.UsernameBox.TabStop = false;
+            this.UsernameBox.UseSystemPasswordChar = false;
             // 
             // dungeonHeaderLabel2
             // 
@@ -136,51 +150,38 @@
             this.dungeonHeaderLabel2.TabIndex = 2;
             this.dungeonHeaderLabel2.Text = "Mật khẩu";
             // 
-            // hopeTextBox1
+            // dungeonHeaderLabel1
             // 
-            this.hopeTextBox1.BackColor = System.Drawing.Color.White;
-            this.hopeTextBox1.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(55)))), ((int)(((byte)(66)))));
-            this.hopeTextBox1.BorderColorA = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(158)))), ((int)(((byte)(255)))));
-            this.hopeTextBox1.BorderColorB = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(223)))), ((int)(((byte)(230)))));
-            this.hopeTextBox1.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.hopeTextBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(49)))), ((int)(((byte)(51)))));
-            this.hopeTextBox1.Hint = "";
-            this.hopeTextBox1.Location = new System.Drawing.Point(13, 54);
-            this.hopeTextBox1.MaxLength = 32767;
-            this.hopeTextBox1.Multiline = false;
-            this.hopeTextBox1.Name = "hopeTextBox1";
-            this.hopeTextBox1.PasswordChar = '\0';
-            this.hopeTextBox1.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.hopeTextBox1.SelectedText = "";
-            this.hopeTextBox1.SelectionLength = 0;
-            this.hopeTextBox1.SelectionStart = 0;
-            this.hopeTextBox1.Size = new System.Drawing.Size(383, 43);
-            this.hopeTextBox1.TabIndex = 3;
-            this.hopeTextBox1.TabStop = false;
-            this.hopeTextBox1.UseSystemPasswordChar = false;
+            this.dungeonHeaderLabel1.AutoSize = true;
+            this.dungeonHeaderLabel1.BackColor = System.Drawing.Color.Transparent;
+            this.dungeonHeaderLabel1.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
+            this.dungeonHeaderLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(77)))));
+            this.dungeonHeaderLabel1.Location = new System.Drawing.Point(6, 15);
+            this.dungeonHeaderLabel1.Name = "dungeonHeaderLabel1";
+            this.dungeonHeaderLabel1.Size = new System.Drawing.Size(131, 25);
+            this.dungeonHeaderLabel1.TabIndex = 1;
+            this.dungeonHeaderLabel1.Text = "Tên tài khoản";
             // 
-            // hopeTextBox2
+            // LoginButton
             // 
-            this.hopeTextBox2.BackColor = System.Drawing.Color.White;
-            this.hopeTextBox2.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(55)))), ((int)(((byte)(66)))));
-            this.hopeTextBox2.BorderColorA = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(158)))), ((int)(((byte)(255)))));
-            this.hopeTextBox2.BorderColorB = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(223)))), ((int)(((byte)(230)))));
-            this.hopeTextBox2.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.hopeTextBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(49)))), ((int)(((byte)(51)))));
-            this.hopeTextBox2.Hint = "";
-            this.hopeTextBox2.Location = new System.Drawing.Point(13, 163);
-            this.hopeTextBox2.MaxLength = 32767;
-            this.hopeTextBox2.Multiline = false;
-            this.hopeTextBox2.Name = "hopeTextBox2";
-            this.hopeTextBox2.PasswordChar = '\0';
-            this.hopeTextBox2.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.hopeTextBox2.SelectedText = "";
-            this.hopeTextBox2.SelectionLength = 0;
-            this.hopeTextBox2.SelectionStart = 0;
-            this.hopeTextBox2.Size = new System.Drawing.Size(383, 43);
-            this.hopeTextBox2.TabIndex = 4;
-            this.hopeTextBox2.TabStop = false;
-            this.hopeTextBox2.UseSystemPasswordChar = false;
+            this.LoginButton.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(223)))), ((int)(((byte)(230)))));
+            this.LoginButton.ButtonType = ReaLTaiizor.Util.HopeButtonType.Primary;
+            this.LoginButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.LoginButton.DangerColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(108)))), ((int)(((byte)(108)))));
+            this.LoginButton.DefaultColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.LoginButton.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.LoginButton.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(49)))), ((int)(((byte)(51)))));
+            this.LoginButton.InfoColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(147)))), ((int)(((byte)(153)))));
+            this.LoginButton.Location = new System.Drawing.Point(72, 245);
+            this.LoginButton.Name = "LoginButton";
+            this.LoginButton.PrimaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(158)))), ((int)(((byte)(255)))));
+            this.LoginButton.Size = new System.Drawing.Size(261, 41);
+            this.LoginButton.SuccessColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(194)))), ((int)(((byte)(58)))));
+            this.LoginButton.TabIndex = 0;
+            this.LoginButton.Text = "Đăng nhập";
+            this.LoginButton.TextColor = System.Drawing.Color.White;
+            this.LoginButton.WarningColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(162)))), ((int)(((byte)(60)))));
+            this.LoginButton.Click += new System.EventHandler(this.LoginButton_Click);
             // 
             // Login
             // 
@@ -208,11 +209,11 @@
         private ReaLTaiizor.Forms.HopeForm hopeForm1;
         private ReaLTaiizor.Controls.HopePictureBox hopePictureBox1;
         private ReaLTaiizor.Controls.HopeGroupBox hopeGroupBox1;
-        private ReaLTaiizor.Controls.HopeTextBox hopeTextBox2;
-        private ReaLTaiizor.Controls.HopeTextBox hopeTextBox1;
+        private ReaLTaiizor.Controls.HopeTextBox PasswordBox;
+        private ReaLTaiizor.Controls.HopeTextBox UsernameBox;
         private ReaLTaiizor.Controls.DungeonHeaderLabel dungeonHeaderLabel2;
         private ReaLTaiizor.Controls.DungeonHeaderLabel dungeonHeaderLabel1;
-        private ReaLTaiizor.Controls.HopeRoundButton hopeRoundButton1;
+        private ReaLTaiizor.Controls.HopeRoundButton LoginButton;
     }
 }
 
