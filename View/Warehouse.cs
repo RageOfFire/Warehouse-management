@@ -53,5 +53,17 @@ namespace View
                     PoisonMessageBox.Show(this, "Xóa thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }    
         }
+
+        private void ExcelButton_Click(object sender, EventArgs e)
+        {
+            if (KhoHangGridView.Rows.Count > 0)
+            {
+                PoisonMessageBox.Show(this, "Xuất ra excels thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                PoisonMessageBox.Show(this, "Cần ít nhất 1 dữ liệu trong bảng để xuất ra excels", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
     }
 }
