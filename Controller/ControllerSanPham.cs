@@ -11,7 +11,7 @@ namespace Controller
         // Khi người dùng thêm
         public void InsertSP(string tensp, string makho, string donvitinh, int gia)
         {
-            string sql_add = "INSERT INTO SanPham (TenSanPham, MaKho, DonViTinh, Gia) VALUES('" + tensp + "',N'" + makho + "',N'" + donvitinh + "',N'"+ gia +"')";
+            string sql_add = "INSERT INTO SanPham (TenSanPham, MaKho, DonViTinh, Gia) VALUES(N'" + tensp + "',N'" + makho + "',N'" + donvitinh + "','"+ gia +"')";
             db.ExecuteNonQuery(sql_add);
         }
         // Khi người dùng sửa

@@ -161,7 +161,5 @@ namespace View
             DiaChiBoxKH.Text = KhoHangGridView.Rows[i].Cells[3].Value.ToString();
             SLTonBoxKH.Text = KhoHangGridView.Rows[i].Cells[4].Value.ToString();
         }
-
-
     }
 }
