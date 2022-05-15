@@ -44,8 +44,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ControllerDonHang.cs" />
+    <Compile Include="ControllerKhachHang.cs" />
     <Compile Include="ControllerKhoHang.cs" />
     <Compile Include="ControllerLogin.cs" />
+    <Compile Include="ControllerSanPham.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

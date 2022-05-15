@@ -1,9 +1,5 @@
 ﻿using ReaLTaiizor.Controls;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using GroupBox = System.Windows.Forms.GroupBox;
 
@@ -67,6 +63,18 @@ namespace View
                 }
             }
             app.Quit();
+        }
+        public DialogResult EasyMessageBox(string text, MessageBoxButtons button, MessageBoxIcon icon)
+        {
+            DialogResult rs = PoisonMessageBox.Show(this, text, "Quản lý Kho hàng", button, icon);
+            return rs;
+        }
+        public void Exit()
+        {
+            this.Hide();
+            Login login = new Login();
+            login.ShowDialog();
+            this.Close();
         }
     }
 }

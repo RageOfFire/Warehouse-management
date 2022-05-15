@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Windows.Forms;
 using ReaLTaiizor.Controls;
 using Controller;
@@ -16,16 +14,17 @@ namespace View
             InitializeComponent();
         }
 
+        //Thực hiện đăng nhập khi người dùng ấn nút đăng nhập
         private void LoginButton_Click(object sender, EventArgs e)
         {
             if (string.IsNullOrWhiteSpace(UsernameBox.Text))
             {
-                PoisonMessageBox.Show(this, "Cần nhập tên người dùng", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                PoisonMessageBox.Show(this, "Cần nhập tên người dùng", "Quản lý kho hàng", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 UsernameBox.Focus();
             }
             else if (string.IsNullOrWhiteSpace(PasswordBox.Text))
             {
-                PoisonMessageBox.Show(this, "Cần nhập mật khẩu", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                PoisonMessageBox.Show(this, "Cần nhập mật khẩu", "Quản lý kho hàng", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
             else
             {
@@ -41,13 +40,13 @@ namespace View
                     }
                     else
                     {
-                        PoisonMessageBox.Show(this, "Đăng nhập thất bại!\nKiểm tra lại tài khoản và mật khẩu", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        PoisonMessageBox.Show(this, "Đăng nhập thất bại!\nKiểm tra lại tài khoản và mật khẩu", "Quản lý kho hàng", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
 
                 }
                 catch (Exception ex)
                 {
-                    PoisonMessageBox.Show(this, "Error" + ex, "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    PoisonMessageBox.Show(this, "Error" + ex, "Quản lý kho hàng", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
         }
